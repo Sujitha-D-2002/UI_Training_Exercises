@@ -1,0 +1,40 @@
+body{
+    font-family: Arial;
+    margin: 0;
+}
+.titleFurniture{
+    font-size: 42px; 
+    font-weight: bold;
+    margin-bottom: -10px;
+    padding-bottom:16px;
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    display:block;
+}
+#nav{
+    font-size: small;
+    color: white;
+}
+.productDesc{
+    color: gray;
+    line-height:1.5;
+}
+form{
+    border-color: grey; 
+}
+
+input{
+    width: 350px;
+    height: 40px;
+    margin: 4px;
+    padding: 8px;
+}
+#dropdown{
+    width: 370px;
+    height: 50px;
+    margin: 4px;
+    padding: 8px;
+    color: grey;
+}
