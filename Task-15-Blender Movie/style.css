@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    position: fixed;
+    background-color: #ffffff;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 5px 10px 0px #cac4c480
+}
+
+.nav {
+    display: flex;
+    column-gap: 79%;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+}
+
+.nav .right img {
+    width: 30%;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.right h6 {
+    display: inline;
+    padding: 5px;
+    font-weight: 200;
+
+}
+
+.right {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+section {
+    max-width: 70%;
+    margin: auto;
+    padding: 18px;
+
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.flex-container {
+    margin-top: 7%;
+    display: flex;
+    column-gap: 2.5%;
+}
+
+.flex-left {
+    max-width: 74.5%;
+}
+
+.flex-left h2 {
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+.flex-left h4 {
+    padding: 20px 0;
+}
+
+.desc {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 22px;
+    padding: 0 0 20px 0;
+}
+
+.comment {
+    display: flex;
+    flex-direction: row;
+    line-height: 22px;
+}
+
+.comments h4 {
+    padding: 40px 0;
+}
+
+.comment img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+.comments-dp {
+    max-width: 20%;
+    display: flex;
+}
+
+.comments-content {
+    max-width: 90%;
+    padding: 7px 15px;
+}
+
+span{
+    width: 70px;
+    height: 70px;
+    border: 1px solid #b53fa9;
+    background-color:#b53fa9 ;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    bottom: 6%;
+    right: 2.5%;
+}
+
+.comments-content p {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.flex-right {
+    max-width: 25.5%;
+}
+
+.images img{
+    width:100%;
+    height: 380px;
+    margin-top: 10px;
+}
+
+
+footer {
+    width: 99%;
+    margin: auto;
+    color: #fff;
+    padding: 20px 0;
+    background-color: #222222;
+
+}
+
+footer .content i {
+    color: #ffffff;
+    background-color: #222222;
+}
+
+.content {
+    width: 70%;
+    display: flex;
+    column-gap: 80%;
+    margin: auto;
+}
+
+.left h5 {
+    display: inline;
+    text-align: right;
+}
+
+@media only screen and (max-width: 767px) {
+    .nav {
+        width: 100%;
+        margin: auto;
+        column-gap: 64%;
+        padding: 25px;
+        justify-content: none;
+    }
+
+    .nav .right img {
+        width: 75%;
+        height: 27px;
+        border-radius: 50%;
+    }
+
+    section {
+        max-width: 90%;
+        margin: auto;
+        padding: 0px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        max-width: 100%;
+        margin-top: 18%;
+    }
+
+    .right h6 {
+        display: none;
+    }
+    .images img{
+        width:100%;
+        height: 50%;
+        margin-top: 10px;
+    }
+    .flex-container .flex-left {
+        max-width: 100%;
+    }
+
+    .flex-container .flex-right {
+        max-width: 100%;
+    }
+
+    .comments-dp {
+        max-width: 15%;
+        justify-content: center;
+        object-fit: contain;
+    }
+
+    .comment {
+        display: flex;
+        flex-direction: row;
+        line-height: 22px;
+        padding: 10px 0;
+    }
+
+    .comment img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin: 10px 0;
+    }
+
+    .comments-content {
+        max-width: 87%;
+        padding: 0 10px
+    }
+
+    .content {
+        display: flex;
+        column-gap: 0%;
+        margin: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer {
+        width: 99%;
+        margin-top: 10px;
+        color: #fff;
+        padding: 20px 0;
+        background-color: #222222;
+
+    }
+
+    footer .content i {
+        color: #ffffff;
+        background-color: #222222;
+    }
+
+    .right,
+    .left {
+        text-align: center;
+        display: block;
+    }
+
+    .right h5 {
+        font-size: 20px;
+    }
+    span{
+        width: 60px;
+        height: 60px;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .nav {
+        column-gap: 37%;
+        padding: 15px;
+    }
+    .flex-container {
+        margin-top: 25%;
+    }
+    span{
+        width: 50px;
+        height: 50px;
+    }
+    span img{
+        width: 48px;
+    }
+}
