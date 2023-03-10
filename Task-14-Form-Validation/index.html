@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <!-- External Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div class="logo-img">
+        <img src="assests/images/Sirius_CDW_Cobranded_PMS2747.svg" alt="logo">
+    </div>
+    <!-- Form Section -->
+    <div class="form">
+        <form novalidate id="billForm" onsubmit="return validateForm()">
+            <h3 class="bill">BILLING DETAILS</h3>
+            <div class="inline-input">
+                <div class="col">
+                    <label>First Name</label>
+                    <input type="text" name="f-name" id="f-name" autocomplete="off">
+                    <span class="f-name-err error"></span>
+                </div>
+                <div class="col">
+                    <label>Last Name</label>
+                    <input type="text" name="l-name" id="l-name" autocomplete="off">
+                    <span class="l-name-err error"></span>
+                </div>
+            </div>
+            <div class="block-input">
+                <div class="col">
+                    <label>Email Address</label>
+                    <input type="text" name="email" id="email" autocomplete="off">
+                    <span class="email-err error"></span>
+                </div>
+            </div>
+            <div class="block-input">
+                <div class="col">
+                    <label>Contact Number</label>
+                    <input type="text" name="phn-no" id="phn-no" autocomplete="off">
+                    <span class="phn-no-err error"></span>
+                </div>
+            </div>
+            <div class="block-input">
+                <div class="col">
+                    <label>PIN Code</label>
+                    <input type="text" name="pin-no" id="pin-no" autocomplete="off">
+                    <span class="pin-no-err error"></span>
+                </div>
+            </div>
+            <h3 class="pay">PAYMENT DETAILS</h3>
+            <div class="block-input">
+                <div class="col">
+                    <label>Card Number</label>
+                    <input type="text" name="card-no" id="card-no" autocomplete="off">
+                    <span class="card-no-err error"></span>
+                </div>
+            </div>
+            <div class="inline-input">
+                <div class="col">
+                    <label>Card Expiry(Year)</label>
+                    <input type="text" name="year" id="year" autocomplete="off">
+                    <span class="year-err error"></span>
+                </div>
+                <div class="col">
+                    <label>CVV</label>
+                    <input type="text" name="cvv" id="cvv" autocomplete="off">
+                    <span class="cvv-err error"></span><br>
+                </div>
+            </div>
+            <div class="block-input">
+                <div class="col">
+                    <input type="submit" value="COMPLETE PAYMENT" class="submit">
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- External Javascript -->
+    <script src="index.js"></script>
+</body>
+
+</html>
