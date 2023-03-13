@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+header h1{
+    font-size: 24px;
+    background-color: #145f94;
+    color:#ffffff;
+    font-weight: 500;
+    text-align: center;
+    padding: 30px;
+    margin-bottom:35px;
+}
+.mainSection{
+    width:84.5%;
+    margin:auto;
+    padding-top: 14px 0 14px 0;
+}
+.leftContainer{
+    float:left;
+    width:59.8%;
+}
+.rightContainer{
+    float:right;
+    width:39%;
+}
+.mainSection::after{
+    content: "";
+    clear: both;
+}
+.cardTv{
+    width:100%;
+    border: 1px solid #145f94;
+    margin-bottom: 20px;
+}
+.cardTitle{
+    font-size: 24px;
+    font-weight: 500;
+    background-color: #145f94;
+    color:#ffffff;
+    padding: 15px 24px;
+}
+.cardDescription{
+    padding: 24px;
+    background-color: #f6f6f6;
+    text-align: justify;
+    line-height: 1.6;
+    word-spacing: 3px;
+    font-size: 17px;
+}
