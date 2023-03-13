@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+body{
+    background-color: #000000;
+}
+.navBar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    top:10px;
+}
+.navBar a{
+    padding: 25px;
+    text-decoration: none;
+    color:#000000;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 38px;
+}
+a:hover{
+    background-color: #b5b1b1;
+    border-radius: 25px;
+}
+.image {
+    top:-120px;
+    position: relative;
+    animation: top-moving 2s;
+}
+.content h1{
+    font-family: 'Tilt Prism', cursive;
+    color: #fff;
+    position: absolute;
+    top:50px;
+    right:250px;
+    font-size: 80px;
+    animation: right-moving 2s;
+}
+.circle{
+    width:300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.content p{
+    color: #fff;
+    position: absolute;
+    top:50px;
+    left:250px;
+    animation: godown 2s;
+}
+.image img{
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+@keyframes top-moving {
+    from {bottom: 0px;}
+    to {top: -100px;}
+}
+@keyframes right-moving {
+    from {right: 0px;}
+    to {right: 250px;}
+}
+/* @keyframes godown {
+    0%{
+        transform: scaleY(0);
+    }
+    30%{
+        transform: scaleY(0.1);
+    }
+    80%{
+        transform: scaleY(1.1);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+} */
+h1 span{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about{
+    color:#e34b4b;
+    font-size: 42px;
+    position: relative;
+    top:200px;
+    left:800px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+}
+.about li{
+    padding-bottom:20px ;
+}
+.about li span{
+    position: relative;
+}
+.about li span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width:100%;
+    left: 0;
+    background-color: #000000;
+    border-left: 2px solid #e34b4b;
+    animation: type 2s steps(10) infinite;
+}
+@keyframes type {
+    100%{
+        left:100%;
+        margin:0 -35px 0 35px;
+    }
+}
