@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Kids</title>
+    <!-- External Icon (font-Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <nav>
+        <h3 class="left-heading">MATH KIDS</h3>
+        <h3 class="right-heading">KIDS LEARNING APP</h3>
+    </nav>
+    <!--End of Nav Bar -->
+
+
+    <!-- Start of First Page -->
+    <div class="step-1">
+        <p class="heading">1. Choose a Shape</p>
+        <div id="shapes">
+            <div class="circle shape" id="circle">
+                <img src="assests/images/MicrosoftTeams-image.png" class="tick">
+            </div>
+            <div class="traingle shape" id="traingle">
+                <img src="assests/images/MicrosoftTeams-image.png" class="tick-t">
+            </div>
+            <div class="square shape" id="square">
+                <img src="assests/images/MicrosoftTeams-image.png" class="tick">
+            </div>
+            <!-- <div class="pentagon shape" id="pentagon">
+                <img src="assests/images/MicrosoftTeams-image.png" class="tick">
+            </div> -->
+        </div>
+        <div class="btn">
+            <button id="next">NEXT</button>
+        </div>
+    </div>
+    <!-- End of First Page -->
+
+    <!-- Start of Second Page -->
+    <div class="step-2">
+        <p id="radius"></p>
+        <form id="myForm" onsubmit="return validate()">
+            <input type="text" name="radius" id="size" autocomplete="off">
+        </form>
+        <div class="btn">
+            <button id="calculate">CALCULATE</button>
+        </div>
+    </div>
+    <!-- End of Second Page -->
+
+    <!-- Start of Third Page -->
+    <div class="step-3">
+        <div class="shape-name">
+            <div id="get-shape"></div>
+            <p class="s-name"></p>
+        </div>
+        <div id="box">
+            <div class="row-1">
+                <p class="table col-1"></p>
+                <p class="table col-2"></p>
+                <p class="table col-3"></p>
+            </div>
+            <div class="row-2">
+                <p class="table col-1">AREA</p>
+                <p class="table col-2"></p>
+                <p class="table col-3"></p>
+            </div>
+            <div class="row-3">
+                <p class="table col-1">PERIMETER</p>
+                <p class="table col-2"></p>
+                <p class="table col-3"></p>
+            </div>
+        </div>
+        <div class="btn">
+            <button id="start">START AGAIN</button>
+        </div>
+    </div>
+    <!-- Start of Third Page -->
+
+    <!-- External Javascript -->
+    <script src="index.js"></script>
+</body>
+
+</html>
