@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+    </head>
+    <body>
+        <script>
+            console.log("------------------ Calculator -----------------");
+            console.log();
+            calculator={
+                //Addition Function
+                addition:function(a,b){
+                    a=parseInt(a);
+                    b=parseInt(b);
+                    sum=a+b;
+                    return sum;
+                },
+                //Subraction Function
+                subraction:function(a,b){
+                    sub=a-b;
+                    return sub;
+                },
+                //Multiplication Function
+                Multiplication:function(a,b){
+                    mul=a*b;
+                    return mul;
+                },
+                //Division Function
+                Division:function(a,b){
+                    div=a/b;
+                    return div;
+                }
+            }
+            //Getting Input From User
+            var n1=window.prompt("Enter the First Value");
+            var n2=window.prompt("Enter the Second Value");
+            // console.log(typeof(n1));
+            console.log("Addition "+calculator.addition(n1,n2));
+            console.log("Subraction "+calculator.subraction(n1,n2));
+            console.log("Multiplication "+calculator.Multiplication(n1,n2));
+            console.log("Division "+calculator.Division(n1,n2));
+        </script>
+    </body>
+</html>
